@@ -27,11 +27,12 @@ class MyTheme{
       buttonColor: lightBluishColor,
       accentColor: Colors.white,
       appBarTheme: AppBarTheme(
-          color: Colors.white,
+          color: Colors.black,
           elevation: 0.0,
           iconTheme: IconThemeData(color: Colors.white),
+
           titleTextStyle: TextStyle(color: Colors.black,
-              fontSize: 20)
+          fontSize: 20)
       ),
 
   );
