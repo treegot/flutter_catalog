@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_catalog/utils/routes.dart';
+import 'package:velocity_x/src/extensions/context_ext.dart';
 
 void main()
 {
@@ -44,6 +45,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Material(
+      color: context.canvasColor,
       child: SingleChildScrollView(
         child: Form(             //  form is parrent so it associate with all textbox
           key: _formkey,
@@ -124,7 +126,7 @@ class _LoginPageState extends State<LoginPage> {
                  ),
 
                  Material(
-                      color: Colors.deepPurple,
+                      color: context.theme.buttonColor,
                      borderRadius: BorderRadius.circular(changeButton?50:8),
                    child: InkWell(
                      onTap: () =>MovetoHome(context),
